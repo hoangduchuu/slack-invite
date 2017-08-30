@@ -14,7 +14,7 @@ echo '<!DOCTYPE html>
 </html>';
 
 
-$base_url = "https://slack.com/api/users.admin.invite?token=YOUR_TOKEN_HERE&email=";
+$base_url = "https://slack.com/api/users.admin.invite?token=YOUR_TOKEN_HERE&email="; // Change YOUR_TOKEN_HERE with your token
 $mail = "";
 $mail = $_POST["email"];
 $endUrl = $base_url . $mail;
@@ -24,12 +24,6 @@ if (strlen($mail) < 1) {
 }
 
 echo '<b> Hello: </b> '. '<font color=red>' . $mail . '</font>';
-
-// echo '<br />';
-
-// echo '<b> Request url: </b>' . '<font color=red>' . $endUrl . '</font>';
- // echo '<b> Request url: </b>' . '<font color=red>' . 'hide :P' . '</font>';
-
 
 
 $json = file_get_contents($endUrl);
