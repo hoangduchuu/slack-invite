@@ -1,4 +1,5 @@
  # Slack invite api
+ demo : http://quangbinhxanh.com/slack
 
 ## Send a request to slack api (as admin). The api will be return json like this:
         {
